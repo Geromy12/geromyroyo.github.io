@@ -1,74 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>My GitHub Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f4f4f4;
-            padding:30px;
-        }
+<title>Geromy's Projects</title>
 
-        h1{
-            text-align:center;
-        }
+<style>
 
-        .repo{
-            background:white;
-            padding:15px;
-            margin:10px 0;
-            border-radius:10px;
-            box-shadow:0 0 5px rgba(0,0,0,0.2);
-        }
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:30px;
+}
 
-        a{
-            text-decoration:none;
-            font-size:20px;
-            color:#0366d6;
-        }
-    </style>
+h1{
+    text-align:center;
+}
+
+.project{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+a{
+    text-decoration:none;
+    color:#0066cc;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    margin-right:10px;
+    padding:10px 15px;
+    background:#0066cc;
+    color:white;
+    border-radius:5px;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>My GitHub Repositories</h1>
+<h1>My Web Systems Projects</h1>
 
-<div id="repos"></div>
+<div class="project">
+    <h2>Assignment 2 - Web Sys 2</h2>
 
-<script>
+    <a class="btn"
+       href="https://geromy12.github.io/Assignment-2---Web-Sys-2/"
+       target="_blank">
+       Live Demo
+    </a>
 
-fetch("https://api.github.com/users/geromyroyo/repos")
+    <a class="btn"
+       href="https://github.com/Geromy12/Assignment-2---Web-Sys-2"
+       target="_blank">
+       Repository
+    </a>
+</div>
 
-.then(response => response.json())
+<div class="project">
+    <h2>Assignment 3 - Web Sys 2</h2>
 
-.then(repos => {
+    <a class="btn"
+       href="https://geromy12.github.io/Assignment-3---Web-Sys-2/"
+       target="_blank">
+       Live Demo
+    </a>
 
-    const container = document.getElementById("repos");
+    <a class="btn"
+       href="https://github.com/Geromy12/Assignment-3---Web-Sys-2"
+       target="_blank">
+       Repository
+    </a>
+</div>
 
-    repos.forEach(repo => {
+<div class="project">
+    <h2>Assignment 5 - Web Sys 2</h2>
 
-        const card = document.createElement("div");
+    <a class="btn"
+       href="https://geromy12.github.io/Assignment-5---Web-Sys-2/"
+       target="_blank">
+       Live Demo
+    </a>
 
-        card.className = "repo";
+    <a class="btn"
+       href="https://github.com/Geromy12/Assignment-5---Web-Sys-2"
+       target="_blank">
+       Repository
+    </a>
+</div>
 
-        card.innerHTML = `
-            <a href="${repo.html_url}" target="_blank">
-                ${repo.name}
-            </a>
+<div class="project">
+    <h2>Assignment 6 - Web Sys 2</h2>
 
-            <p>
-                ${repo.description || "No description available"}
-            </p>
-        `;
+    <a class="btn"
+       href="https://geromy12.github.io/Assignment-6---Web-Sys-2/"
+       target="_blank">
+       Live Demo
+    </a>
 
-        container.appendChild(card);
-    });
+    <a class="btn"
+       href="https://github.com/Geromy12/Assignment-6---Web-Sys-2"
+       target="_blank">
+       Repository
+    </a>
+</div>
 
-});
+<div class="project">
+    <h2>WebSys Final Activity</h2>
 
-</script>
+    <a class="btn"
+       href="https://geromy12.github.io/websys-final-activity/"
+       target="_blank">
+       Live Demo
+    </a>
+
+    <a class="btn"
+       href="https://github.com/Geromy12/websys-final-activity"
+       target="_blank">
+       Repository
+    </a>
+</div>
+
+<div class="project">
+    <h2>Activity Final WebSys ORM</h2>
+
+    <a class="btn"
+       href="https://geromy12.github.io/activity-final-websys-ORM/"
+       target="_blank">
+       Live Demo
+    </a>
+
+    <a class="btn"
+       href="https://github.com/Geromy12/activity-final-websys-ORM"
+       target="_blank">
+       Repository
+    </a>
+</div>
+
+<div class="project">
+    <h2>File Upload Single Multiple</h2>
+
+    <a class="btn"
+       href="https://geromy12.github.io/file-upload-single-multiple/"
+       target="_blank">
+       Live Demo
+    </a>
+
+    <a class="btn"
+       href="https://github.com/Geromy12/file-upload-single-multiple"
+       target="_blank">
+       Repository
+    </a>
+</div>
+
+<div class="project">
+    <h2>WebSys Activity QR Code</h2>
+
+    <a class="btn"
+       href="https://geromy12.github.io/websys-activity-QRcode/"
+       target="_blank">
+       Live Demo
+    </a>
+
+    <a class="btn"
+       href="https://github.com/Geromy12/websys-activity-QRcode"
+       target="_blank">
+       Repository
+    </a>
+</div>
 
 </body>
 </html>
